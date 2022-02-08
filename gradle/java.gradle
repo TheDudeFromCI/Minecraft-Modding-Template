@@ -5,10 +5,10 @@ java {
 
     // Generate a sources JAR.
     withSourcesJar()
-    
+
     // Generate a JavaDoc JAR.
     withJavadocJar()
-    
+
     // Set minimum language version.
     toolchain.languageVersion = JavaLanguageVersion.of(8)
 }

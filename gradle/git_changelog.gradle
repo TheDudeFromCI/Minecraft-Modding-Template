@@ -1,6 +1,6 @@
 /*
  This module will generate a changelog using the Git commit log. The log will
- be generated using all known commits since the last run. If no last run is 
+ be generated using all known commits since the last run. If no last run is
  known the current commit will be used. The changelog output is in markdown
  format and will contain the commit message and a link to the commit.
 */
@@ -42,15 +42,15 @@ def getChangelog(maxLength) {
     for (line in split) {
 
         def newOutput = output + '\n' + line;
-        
+
         if (newOutput.length() > maxLength) {
-        
+
             return output
         }
-        
+
         output = newOutput
     }
-    
+
     return output;
 }
 
