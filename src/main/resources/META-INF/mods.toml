@@ -13,10 +13,10 @@ displayName="${modName}"
 displayURL="${modHomepage}"
 credits="${modCredits}"
 authors="${modAuthor}"
+itemIcon="minecraft:golden_apple"
 description='''
 ${modDescription}
 '''
-itemIcon="minecraft:golden_apple"
 
 [[dependencies.examplemod]]
     modId="forge"
