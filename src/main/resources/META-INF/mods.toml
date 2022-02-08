@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[36,]"
-issueTrackerURL="https://github.com/Darkhax/Minecraft-Modding-Template/issues"
-license="LGPL v2.1"
+issueTrackerURL="${modIssues}"
+license="MIT"
 logoFile="mod_logo.png"
 logoBlur=false
 
 [[mods]]
 modId="${modId}"
-updateJSONURL="https://updates.blamejared.com/get?n=examplemod&gv=1.16.5"
+updateJSONURL="https://updates.blamejared.com/get?n=${modId}&gv=${mcVersion}"
 version="${file.jarVersion}"
 displayName="${modName}"
 displayURL="${modHomepage}"
@@ -17,16 +17,16 @@ description='''
 ${modDescription}
 '''
 
-[[dependencies.examplemod]]
+[["dependencies.${modId}"]]
     modId="forge"
     mandatory=true
     versionRange="[36,]"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]]
+[["dependencies.${modId}"]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[${mcVersionMin},${mcVersion}]"
     ordering="NONE"
     side="BOTH"

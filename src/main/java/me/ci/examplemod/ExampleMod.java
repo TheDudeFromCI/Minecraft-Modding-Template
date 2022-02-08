@@ -1,4 +1,4 @@
-package net.darkhax.examplemod;
+package me.ci.examplemod;
 
 import java.io.File;
 import java.io.IOException;

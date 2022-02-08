@@ -15,7 +15,8 @@ ext.modSource = getOptionalString('mod_source')
 ext.modIssues = getOptionalString('mod_issues')
 
 // Load Minecraft specific properties
-ext.mcVersion = getRequiredString('minecraft_version')
+ext.mcVersionMin = getRequiredString('minecraft_version_min')
+ext.mcVersion = getRequiredString('minecraft_version_max')
 
 // Load build-time modules
 apply from: 'gradle/build_number.gradle'
