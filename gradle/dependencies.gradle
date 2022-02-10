@@ -42,7 +42,7 @@ repositories {
 
 dependencies {
 
-    compiledDeps = getRequiredString('compiled_deps').split(",")
+    def compiledDeps = getRequiredString('compiled_deps').split(",")
     compiledDeps.each { modid ->
         def group = getRequiredString("${modid}_group")
         def name = getRequiredString("${modid}_name")
@@ -52,7 +52,7 @@ dependencies {
         project.getDependencies().add('implementation', fg.deobf("${group}:${name}:${version}"))
     }
 
-    runtimeDeps = getRequiredString('runtime_deps').split(",")
+    def runtimeDeps = getRequiredString('runtime_deps').split(",")
     runtimeDeps.each { modid ->
         def group = getRequiredString("${modid}_group")
         def name = getRequiredString("${modid}_name")
